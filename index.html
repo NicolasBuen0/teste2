@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:image" content="https://raw.githubusercontent.com/TiagoeHosama/convite/main/img/miniatura.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&family=Roboto+Slab:wght@300;400&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Tiago & Hosama</title>
+</head>
+<script>
+    document.documentElement.classList.add("js");
+</script>
+
+<body>
+    <div class="home" data-aos="flip-left"> 
+        <div class="container_letras">
+            <img src="img/letras.jpeg" class="letras" >
+            
+
+        </div>
+      <!--   <img src="./img/flor.png" class="flor" data-anime="200"> -->
+        <div class="container_nomes">
+        <!--     <p class="font-2 nomes" data-anime="400">Tiago & Hosama</p> -->
+            <span class="data size-b" data-anime="600">10/05/2024</span>
+            <p class="size-b3" data-anime="700">"De modo que não são mais dois, mas uma só carne."</p>
+            <p class="size-b3" data-anime="700">-Mat.19:6</p>
+       
+        </div>
+    </div>
+    <div class="conteudo container" data-aos="fade-up">
+        <p class="font-2 nomes">Tiago & Hosama</p>
+         <p class="size-b2 convidam"> O convidam para a celebração de seu casamento</p>
+        <p class="size-b cerimonia">Cerimônia</p>
+        <div class="local">
+            <p class="size-b2"> Sexta, 10 de Maio de 2024 - 16h</p>
+            <p class="size-b2">Local: Espaço Itacarambi, Baianópolis-Ba</p>
+        </div>
+    </div>
+    <div class="conteudo container recepcao" data-aos="fade-up">
+        <p class="size-b cerimonia">Recepção</p>
+        <div class="local">
+            <p class="size-b2">Após a cerimônia, haverá um lanche para os convidados no mesmo local</p>
+
+        </div>
+    </div>
+
+
+    <div class="icones">
+        <p class="size-b primeiro" data-aos="fade-up">Clique</p>
+        <p class="size-b segundo font-3" data-aos="fade-up">Para interagir</p>
+        <div class="container_icones">
+            <div class="icones_links" data-aos="flip-left">
+                <p class="size-b2-l texto_link">Confirmar
+                    <br>Presença
+                </p>
+                <a href="https://api.whatsapp.com/send?phone=7799893235&text=Ol%C3%A1%2C%20presen%C3%A7a%20confirmada!" target="_blank"><img src="./img/whats.png"></a>
+            </div>
+            <div class="icones_links" data-aos="flip-left">
+                <p class="size-b2-l texto_link">Visualizar
+                    <br>Localização
+                </p>
+                <a href="https://maps.app.goo.gl/Kisf2Vk9b97S4ozZ7" target="_blank"><img src="./img/local.png"></a>
+            </div>
+            <div class="icones_links" data-aos="flip-left">
+                <p class="size-b2-l texto_link">Dicas e
+                    <br>Notas
+                </p>
+                <button onclick="abrirModal('modal-dicas')"><img src="img/check.png" </button>
+            </div>
+            <div class="icones_links" data-aos="flip-left">
+                <p class="size-b2-l texto_link">Pix
+                    <br>Presente
+                </p>
+                <button onclick="abrirModal('modal-pix')"><img src="img/pix.png" </button>
+            </div>
+        </div>
+    </div>
+    </div>
+    <!-- Modal de dicas (oculto por padrão) -->
+    <div id="modal-dicas" class="modal" onclick="fecharModal('modal-dicas')">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <span class="close" onclick="fecharModal('modal-dicas')">&times;</span>
+            <ul class="size-b2">
+                <p class="size-b">Dicas e Notas</p>
+                <li>1. Por favor, confirme sua presença!</li>
+                <li>2. Não convide outras pessoas.</li>
+                <li>3. As lembrancinhas serão entregues no final, antes disso farão parte da decoração..</li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-pix" class="modal" onclick="fecharModal('modal-pix')">
+        <div class="modal-content" onclick="event.stopPropagation();">
+            <span class="close" onclick="fecharModal('modal-pix')">&times;</span>
+            <ul class="size-b2">
+                <p class="size-b">Pix Presente</p>
+                <li>Se você desejar nos dar algo mais do que sua linda presença.</li>
+                <li>Pix: 77998172645 (Tiago)</li>
+                <li>Pix: 77999893235 (Hosama)</li>
+            </ul>
+        </div>
+    </div>
+    <div class="casal" data-aos="fade-up">
+        <img src="./img/casal.png">
+    </div>
+    <footer class="size ">
+        Desenvolvido por <a href="https://convitecasamento.com.br/" target="_blank">N & B
+            convites digitais para casamento</a>
+
+    </footer>
+
+
+    <script>
+        var scrollTopPos;
+
+        function abrirModal(id) {
+            // Salva a posição atual da barra de rolagem
+            scrollTopPos = window.pageYOffset || document.documentElement.scrollTop;
+            // Adiciona uma classe ao corpo para desabilitar o scroll
+            document.body.classList.add('modal-open');
+            // Define a posição da barra de rolagem para evitar que a página role para o topo
+            document.body.style.top = -scrollTopPos + 'px';
+            document.getElementById(id).style.display = "block";
+        }
+
+        function fecharModal(id) {
+            // Remove a classe do corpo para habilitar o scroll
+            document.body.classList.remove('modal-open');
+            // Restaura a posição da barra de rolagem
+            document.body.style.top = '';
+            window.scrollTo(0, scrollTopPos); // Move a página de volta para a posição original
+            document.getElementById(id).style.display = "none";
+        }
+
+
+
+    </script>
+
+
+</body>
+<script type="text/javascript" src="https://cdn.addevent.com/libs/atc/1.6.1/atc.min.js" async defer></script>
+<script src="simple-anime.js"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+
+
+</html>

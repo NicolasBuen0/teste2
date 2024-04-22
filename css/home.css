@@ -1,0 +1,109 @@
+
+.js .home{
+    opacity: 1; /* mudar para 0 caso queira entrar com musica */
+    
+}
+
+.home {
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+    position: relative;
+    
+    
+}
+
+.flor{
+    width: 400px;
+    
+    padding-bottom: 50px;
+}
+
+
+@keyframes aparecer {
+    0% {
+        top: -200px;
+        opacity: 0;
+    }
+    100% {
+        top: 0px; /* A posição final da imagem na tela */
+        opacity: 1;
+        
+    }
+}
+
+@keyframes aparecer-esq {
+    0% {
+        right: -200px;
+        opacity: 0;
+     
+    }
+    100% {
+        right: 0px; /* A posição final da imagem na tela */
+        opacity: 1;
+       
+    }
+}
+.home{
+    position: relative;
+}
+
+
+.data {
+    text-align: center;
+    align-self: center; 
+    font-weight: bold;
+    position: relative;
+    display: flex;
+    color: #5D4F46;
+    padding-bottom: 10px;
+
+    
+}
+
+
+
+
+  .container_nomes{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-self: center;
+    flex-wrap: wrap;
+    position: relative;
+text-align: center;
+
+
+
+  }
+
+
+
+
+
+  .nomes {
+    padding-top: 25px;
+    color: #5D4F46;
+    text-align: center;
+
+   
+}
+
+
+@media(max-width:555px) {
+    .nomes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+   
+    }
+  }
+
+
+
+

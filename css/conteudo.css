@@ -1,0 +1,140 @@
+
+.conteudo{
+    text-align: center;
+
+  padding-top: 180px;
+    padding-bottom: 50px;
+  
+  
+
+}
+.conteudo.container{
+    max-width: 500px;
+}
+
+.convidam{
+  padding-top: 20px;
+
+  padding-bottom: 40px;
+}
+
+.cerimonia{
+    text-align: center;
+    position: relative;
+    line-height: 1;
+
+}
+
+.cerimonia::before,
+.cerimonia::after {
+  
+  content: "";
+  position: absolute;
+  top: 50%;
+  width: calc(50% - 80px); /* Ajuste a largura da linha conforme necessário */
+  height: 0.5px; /* Espessura da linha */
+  background-color: #5D4F46; /* Cor da linha */
+  transform: translateY(-50%); /* Corrigir o posicionamento vertical */
+  
+}
+
+.cerimonia::before {
+  left: 0;
+}
+
+.cerimonia::after {
+  right: 0;
+}
+
+.local{
+    padding-top: 20px;
+}
+
+.recepcao{
+    padding-top: 20px;
+}
+
+.local {
+    padding-left: 20px ;
+    padding-right: 20px;
+    
+}
+
+.casal{
+  padding-top: 70px;
+  padding-bottom: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  
+}
+
+.casal img{
+  width: 400px;
+}
+
+.icones {
+  padding-top: 30px;
+  text-align: center;
+}
+
+.container_icones{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 50px;
+}
+
+.icones .primeiro{
+  letter-spacing: 5px;
+}
+
+.icones button{
+  background-color: transparent;
+  border: none ;
+}
+
+.icones_links{
+  flex-direction: column;
+  flex-wrap: wrap;
+  padding-top: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+ 
+
+}
+
+.texto_link{
+  padding-bottom: 10px;
+ 
+}
+
+
+.container_letras{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  flex-direction: column;
+
+
+}
+
+
+
+
+.letras{
+  padding-top: 0px;
+  padding-bottom: 80px;
+  width: 400px;
+
+
+}
+
+.iniciais{
+  position: absolute;
+
+}
